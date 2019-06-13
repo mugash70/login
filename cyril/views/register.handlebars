@@ -1,0 +1,50 @@
+<style>
+.form-group{
+    {
+    background:rgba(44,62,80,0,7);
+    padding:50px;
+    width:250px;
+    margin: 5px;
+    margin-top: 10px;
+    height: 401px;
+    margin-left: 500px         
+}
+.alert{
+    width:20%;
+   height:7%
+}
+</style>
+<h2 class="page-header">Register</h2>
+{{#if errors}}
+{{#each errors}}
+<div class="alert alert-warning">{{msg}}</div>
+{{/each}}
+{{/if}}
+<form method="POST" action="/users/register">
+    <div class="form-group">
+        <lable>Name</lable>
+        <input type="text" class="form-control" placeholder="name" name="name">
+    </div>
+    <div class="form-group">
+        <lable>Username</lable>
+        <input type="text" class="form-control" placeholder="username"
+            name="username">
+    </div>
+    <div class="form-group">
+        <lable>Email</lable>
+        <input type="email" class="form-control" placeholder="Email"
+            name="email">
+    </div>
+    <div class="form-group">
+        <lable>Password</lable>
+        <input type="password" class="form-control" placeholder="password"
+            name="password">
+    </div>
+    <div class="form-group">
+        <lable>Confrim Password</lable>
+        <input type="password" class="form-control" placeholder="password"
+            name="password2">
+    </div>
+    <button type='submit' class="btn btn-default">Submit</button>
+
+</form>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+            initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>cyril's creations</title>
+
+        <link href="/css/bootstrap.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    </header>
+    <div class="container">
+        <div class="header clearfix">
+            <ul class="navbar-nav ml-auto">
+                <nav>
+                    <ul class="nav nav-pills pull-right">
+
+                        <li role="presentation"><a
+                                href="/">Dashboard</a></li>
+                        <li role="presentation"><a
+                                href="/users/logout">Logout</a></li>
+                        <li role="presentation"><a
+                                href="/users/login">Login</a></li>
+                        <li role="presentation"><a
+                                href="/users/register">Register</a></li>
+
+                    </ul>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            {{#if success_msg}}
+                            <div class="alert alert-success">{{success_msg}}</div>
+                            {{/if}}
+                            {{#if error_msg}}
+                            <div class="alert alert-danger">{{error_msg}}</div>
+                            {{/if}}
+                            {{#if error}}
+                            <div class="alert alert-danger">{{error}}</div>
+                            {{/if}}
+                            <div>
+                                {{{body}}}
+                            </div>
+                        </div>
+                    </nav>
+                    <footer class="footer">
+                        <p>&copy; 2019 MUGADA Inc.</p>
+                    </footer>
+                </div>
+            </body></html
